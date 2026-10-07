@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <p>Please enter your personal and educational information.</p>
+    
+    <form >
+      <h2>Personal Information</h2>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required >
+      <br><br>
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate" > 
+      <br><br>
+      <label for="age">Age</label>
+      <input type="number"  id ="age" min="10" max="25" >
+      <br><br> 
+      <span>Gender:</span> 
+      <input type="radio" id="Male" name=" Male"> 
+      <label for="Male">Male</label>
+      <input type="radio" id=" Female" name=" Female"> 
+      <label for=" Female"> Female</label>
+      <br><br>
+      <label for="phone">Phone Namber : </label>
+      <input type="tel" id="phone" name="phone" >
+       <br><br>
+      <label for="address">Address: </label>
+      <input type="text" id="address" name="address" >
+      <br><br>
+      <label for="City">City:</label>
+      <input type="text" id="City" name="City" >
+
+      <h2>Account Information</h2>   
+      <label for="Username"> Username: </label>
+      <input type="text" id="Username" name="Username" >
+      <br><br>
+      <label for="Email"> Email: </label>
+      <input type="email" id="Email" name="Email" required >
+      <br><br>
+      <label for="Password"> Password: </label>
+      <input type="password" id="Password" name="Password" required>
+
+      <h2>Education Information</h2>
+      <label for="University"> University: </label>
+      <input type="text" id="University" name="University" >
+      <br><br>
+      <label for="faculty"> Faculty: </label>
+      <input type="text" id="faculty" name="faculty" >
+      <br><br>
+      <label for="department"> Department:</label>
+      <select name="department" id="department">
+        <option value="sel" selected> Select Department </option>
+        <option value="Com" > Computer science </option>
+        <option value="Inf" > Information Systems </option>
+        <option value="Eng" > Engineering </option>
+        <option value="Bus" > Business </option>
+        <option value="Med" > Medicine </option>
+      </select>
+      <br><br> 
+     <label for=" Academic Year "> Academic Year:</label>
+      <select name="Academic Year" id="Academic Year">
+        <option value="First" selected> First Year </option>
+        <option value="Second" > Second Year </option>
+        <option value="Third" > Third Year </option>
+        <option value="Fourth" > Fourth Year </option>
+        <option value="Graduate" > Graduate </option>
+      </select>
+      <br><br>
+      <label for="GPA"> GPA:</label>
+      <input type="number" name="GPA" id="GPA" min="0" max="4" step="0.01">
+
+      <h2>Skills and Interests</h2>
+      <p>Select Your Skills:</p>
+      <input type="checkbox" id=" HTML " name=" HTML "> 
+      <label for=" HTML "> HTML </label>
+      <input type="checkbox" id="Python " name=" Python "> 
+      <label for=" Python "> Python </label>
+      <input type="checkbox" id=" SQL " name=" SQL "> 
+      <label for=" SQL "> SQL </label>
+      <input type="checkbox" id=" Design " name=" Design "> 
+      <label for=" Design "> Design </label>
+       <br><br>
+
+      <label for=" Favorite Language "> Favorite Language:</label>
+      <select name=" Favorite Language " id=" Favorite Language ">
+        <option value="Arabic" selected> Arabic </option>
+        <option value="English" > English </option>
+        <option value="French" > French </option>
+        <option value="German" > German </option>
+      </select>
+      <br><br>
+
+      <label for="Hobbies">Hobbies:</label>
+      <textarea name="Hobbies" id="Hobbies" cols="50" rows="4" required maxlength="40" minlength="10"></textarea>
+       <br><br>
+      <label for="about"> About Me:</label>
+      <textarea name="about" id="about" cols="50" rows="4" required maxlength="40" minlength="10" ></textarea>
+      <br><br>
+      <label for="Personal"> Personal Website:</label>
+      <input name="Personal" id="Personalt"  type="url">
+      <br><br>
+      <label for="Profile"> Profile Photo: </label>
+      <input name="Profile" id="Profile"  type="file">
+      <br><br>
+      <input type="checkbox" name="i agree" id="i agree" required>
+      <label for="i agree">I agree to the terms and conditions.</label>
+      <br><br>
+      <button  type="submit" >Register</button>
+      <button  type="reset" > Clear Form</button>
+    </form>
+</body>
+</html>
+
+
+
